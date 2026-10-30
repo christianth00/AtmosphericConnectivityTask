@@ -1,0 +1,68 @@
+# Upstream traces (generated)
+
+Which routes exist (not how much flows on them), best route per (tier-1 supplier, origin). `last_leg` = weakest link after the last transformation; `min` = weakest link on the whole route.
+
+## Moerdijk Chemicals (Shell)
+
+| tier1_supplier | origin | last_leg | min | hops | path |
+|---|---|---|---|---|---|
+| Shell Pernis Refinery | Seaborne crude (outside slice) | 0.6 | 0.5 | 4 | Seaborne crude (outside slice) --sea/inferred--> Rotterdam [NL] --pipeline/snapped--> Shell Pernis Refinery [crude_distillation: crude->naphtha] --pipeline/gap_bridged--> Moerdijk Chemicals (Shell) |
+| Seaborne naphtha (outside slice) | Seaborne naphtha (outside slice) | 0.5 | 0.5 | 2 | Seaborne naphtha (outside slice) --sea/inferred--> Moerdijk [NL] --pipeline/snapped--> Moerdijk Chemicals (Shell) |
+| BP Rotterdam Refinery | Seaborne crude (outside slice) | 0.5 | 0.5 | 6 | Seaborne crude (outside slice) --sea/inferred--> Rotterdam [NL] --port_link/inferred--> BP Rotterdam Refinery [crude_distillation: crude->naphtha] --port_link/inferred--> Rotterdam [NL] --sea/inferred--> Moerdijk [NL] --pipeline/snapped--> Moerdijk Chemicals (Shell) |
+| ExxonMobil Botlek Rotterdam Refinery | Seaborne crude (outside slice) | 0.5 | 0.5 | 6 | Seaborne crude (outside slice) --sea/inferred--> Rotterdam [NL] --port_link/inferred--> ExxonMobil Botlek Rotterdam Refinery [crude_distillation: crude->naphtha] --port_link/inferred--> Rotterdam [NL] --sea/inferred--> Moerdijk [NL] --pipeline/snapped--> Moerdijk Chemicals (Shell) |
+| ExxonMobil Antwerp Refinery | Seaborne crude (outside slice) | 0.5 | 0.5 | 6 | Seaborne crude (outside slice) --sea/inferred--> Antwerp [BE] --port_link/inferred--> ExxonMobil Antwerp Refinery [crude_distillation: crude->naphtha] --port_link/inferred--> Antwerp [BE] --sea/inferred--> Moerdijk [NL] --pipeline/snapped--> Moerdijk Chemicals (Shell) |
+| Total Antwerp Refinery | Seaborne crude (outside slice) | 0.5 | 0.5 | 6 | Seaborne crude (outside slice) --sea/inferred--> Antwerp [BE] --port_link/inferred--> Total Antwerp Refinery [crude_distillation: crude->naphtha] --port_link/inferred--> Antwerp [BE] --sea/inferred--> Moerdijk [NL] --pipeline/snapped--> Moerdijk Chemicals (Shell) |
+| ExxonMobil Botlek Rotterdam Refinery | Beyond slice (RMR, crude) | 0.5 | 0.3 | 5 | Beyond slice (RMR, crude) --pipeline/gap_bridged--> ExxonMobil Botlek Rotterdam Refinery [crude_distillation: crude->naphtha] --port_link/inferred--> Rotterdam [NL] --sea/inferred--> Moerdijk [NL] --pipeline/snapped--> Moerdijk Chemicals (Shell) |
+| Total Lukoil Zeeland Refinery | Seaborne crude (outside slice) | 0.2 | 0.2 | 6 | Seaborne crude (outside slice) --sea/inferred--> Terneuzen [NL] --unmapped/assumed--> Total Lukoil Zeeland Refinery [crude_distillation: crude->naphtha] --unmapped/assumed--> Ghent [BE] --sea/inferred--> Moerdijk [NL] --pipeline/snapped--> Moerdijk Chemicals (Shell) |
+
+## Total Olefins Antwerp
+
+| tier1_supplier | origin | last_leg | min | hops | path |
+|---|---|---|---|---|---|
+| Seaborne naphtha (outside slice) | Seaborne naphtha (outside slice) | 0.5 | 0.5 | 2 | Seaborne naphtha (outside slice) --sea/inferred--> Antwerp [BE] --port_link/inferred--> Total Olefins Antwerp |
+| ExxonMobil Antwerp Refinery | Seaborne crude (outside slice) | 0.5 | 0.5 | 4 | Seaborne crude (outside slice) --sea/inferred--> Antwerp [BE] --port_link/inferred--> ExxonMobil Antwerp Refinery [crude_distillation: crude->naphtha] --colocated/inferred--> Total Olefins Antwerp |
+| Total Antwerp Refinery | Seaborne crude (outside slice) | 0.5 | 0.5 | 4 | Seaborne crude (outside slice) --sea/inferred--> Antwerp [BE] --port_link/inferred--> Total Antwerp Refinery [crude_distillation: crude->naphtha] --colocated/inferred--> Total Olefins Antwerp |
+| Shell Pernis Refinery | Seaborne crude (outside slice) | 0.5 | 0.5 | 6 | Seaborne crude (outside slice) --sea/inferred--> Rotterdam [NL] --pipeline/snapped--> Shell Pernis Refinery [crude_distillation: crude->naphtha] --port_link/inferred--> Rotterdam [NL] --sea/inferred--> Antwerp [BE] --port_link/inferred--> Total Olefins Antwerp |
+| BP Rotterdam Refinery | Seaborne crude (outside slice) | 0.5 | 0.5 | 6 | Seaborne crude (outside slice) --sea/inferred--> Rotterdam [NL] --port_link/inferred--> BP Rotterdam Refinery [crude_distillation: crude->naphtha] --port_link/inferred--> Rotterdam [NL] --sea/inferred--> Antwerp [BE] --port_link/inferred--> Total Olefins Antwerp |
+| ExxonMobil Botlek Rotterdam Refinery | Seaborne crude (outside slice) | 0.5 | 0.5 | 6 | Seaborne crude (outside slice) --sea/inferred--> Rotterdam [NL] --port_link/inferred--> ExxonMobil Botlek Rotterdam Refinery [crude_distillation: crude->naphtha] --port_link/inferred--> Rotterdam [NL] --sea/inferred--> Antwerp [BE] --port_link/inferred--> Total Olefins Antwerp |
+| ExxonMobil Botlek Rotterdam Refinery | Beyond slice (RMR, crude) | 0.5 | 0.3 | 5 | Beyond slice (RMR, crude) --pipeline/gap_bridged--> ExxonMobil Botlek Rotterdam Refinery [crude_distillation: crude->naphtha] --port_link/inferred--> Rotterdam [NL] --sea/inferred--> Antwerp [BE] --port_link/inferred--> Total Olefins Antwerp |
+| Total Lukoil Zeeland Refinery | Seaborne crude (outside slice) | 0.2 | 0.2 | 6 | Seaborne crude (outside slice) --sea/inferred--> Terneuzen [NL] --unmapped/assumed--> Total Lukoil Zeeland Refinery [crude_distillation: crude->naphtha] --unmapped/assumed--> Ghent [BE] --sea/inferred--> Antwerp [BE] --port_link/inferred--> Total Olefins Antwerp |
+
+## Antwerp Petrochemicals (BASF)
+
+| tier1_supplier | origin | last_leg | min | hops | path |
+|---|---|---|---|---|---|
+| Seaborne naphtha (outside slice) | Seaborne naphtha (outside slice) | 0.5 | 0.5 | 2 | Seaborne naphtha (outside slice) --sea/inferred--> Antwerp [BE] --port_link/inferred--> Antwerp Petrochemicals (BASF) |
+| ExxonMobil Antwerp Refinery | Seaborne crude (outside slice) | 0.5 | 0.5 | 5 | Seaborne crude (outside slice) --sea/inferred--> Antwerp [BE] --port_link/inferred--> ExxonMobil Antwerp Refinery [crude_distillation: crude->naphtha] --port_link/inferred--> Antwerp [BE] --port_link/inferred--> Antwerp Petrochemicals (BASF) |
+| Total Antwerp Refinery | Seaborne crude (outside slice) | 0.5 | 0.5 | 5 | Seaborne crude (outside slice) --sea/inferred--> Antwerp [BE] --port_link/inferred--> Total Antwerp Refinery [crude_distillation: crude->naphtha] --port_link/inferred--> Antwerp [BE] --port_link/inferred--> Antwerp Petrochemicals (BASF) |
+| Shell Pernis Refinery | Seaborne crude (outside slice) | 0.5 | 0.5 | 6 | Seaborne crude (outside slice) --sea/inferred--> Rotterdam [NL] --pipeline/snapped--> Shell Pernis Refinery [crude_distillation: crude->naphtha] --port_link/inferred--> Rotterdam [NL] --sea/inferred--> Antwerp [BE] --port_link/inferred--> Antwerp Petrochemicals (BASF) |
+| BP Rotterdam Refinery | Seaborne crude (outside slice) | 0.5 | 0.5 | 6 | Seaborne crude (outside slice) --sea/inferred--> Rotterdam [NL] --port_link/inferred--> BP Rotterdam Refinery [crude_distillation: crude->naphtha] --port_link/inferred--> Rotterdam [NL] --sea/inferred--> Antwerp [BE] --port_link/inferred--> Antwerp Petrochemicals (BASF) |
+| ExxonMobil Botlek Rotterdam Refinery | Seaborne crude (outside slice) | 0.5 | 0.5 | 6 | Seaborne crude (outside slice) --sea/inferred--> Rotterdam [NL] --port_link/inferred--> ExxonMobil Botlek Rotterdam Refinery [crude_distillation: crude->naphtha] --port_link/inferred--> Rotterdam [NL] --sea/inferred--> Antwerp [BE] --port_link/inferred--> Antwerp Petrochemicals (BASF) |
+| ExxonMobil Botlek Rotterdam Refinery | Beyond slice (RMR, crude) | 0.5 | 0.3 | 5 | Beyond slice (RMR, crude) --pipeline/gap_bridged--> ExxonMobil Botlek Rotterdam Refinery [crude_distillation: crude->naphtha] --port_link/inferred--> Rotterdam [NL] --sea/inferred--> Antwerp [BE] --port_link/inferred--> Antwerp Petrochemicals (BASF) |
+| Total Lukoil Zeeland Refinery | Seaborne crude (outside slice) | 0.2 | 0.2 | 6 | Seaborne crude (outside slice) --sea/inferred--> Terneuzen [NL] --unmapped/assumed--> Total Lukoil Zeeland Refinery [crude_distillation: crude->naphtha] --unmapped/assumed--> Ghent [BE] --sea/inferred--> Antwerp [BE] --port_link/inferred--> Antwerp Petrochemicals (BASF) |
+
+## Terneuzen Petrochemical (Dow)
+
+| tier1_supplier | origin | last_leg | min | hops | path |
+|---|---|---|---|---|---|
+| Seaborne naphtha (outside slice) | Seaborne naphtha (outside slice) | 0.5 | 0.5 | 2 | Seaborne naphtha (outside slice) --sea/inferred--> Terneuzen [NL] --port_link/inferred--> Terneuzen Petrochemical (Dow) |
+| Shell Pernis Refinery | Seaborne crude (outside slice) | 0.5 | 0.5 | 6 | Seaborne crude (outside slice) --sea/inferred--> Rotterdam [NL] --pipeline/snapped--> Shell Pernis Refinery [crude_distillation: crude->naphtha] --port_link/inferred--> Rotterdam [NL] --sea/inferred--> Terneuzen [NL] --port_link/inferred--> Terneuzen Petrochemical (Dow) |
+| BP Rotterdam Refinery | Seaborne crude (outside slice) | 0.5 | 0.5 | 6 | Seaborne crude (outside slice) --sea/inferred--> Rotterdam [NL] --port_link/inferred--> BP Rotterdam Refinery [crude_distillation: crude->naphtha] --port_link/inferred--> Rotterdam [NL] --sea/inferred--> Terneuzen [NL] --port_link/inferred--> Terneuzen Petrochemical (Dow) |
+| ExxonMobil Botlek Rotterdam Refinery | Seaborne crude (outside slice) | 0.5 | 0.5 | 6 | Seaborne crude (outside slice) --sea/inferred--> Rotterdam [NL] --port_link/inferred--> ExxonMobil Botlek Rotterdam Refinery [crude_distillation: crude->naphtha] --port_link/inferred--> Rotterdam [NL] --sea/inferred--> Terneuzen [NL] --port_link/inferred--> Terneuzen Petrochemical (Dow) |
+| ExxonMobil Antwerp Refinery | Seaborne crude (outside slice) | 0.5 | 0.5 | 6 | Seaborne crude (outside slice) --sea/inferred--> Antwerp [BE] --port_link/inferred--> ExxonMobil Antwerp Refinery [crude_distillation: crude->naphtha] --port_link/inferred--> Antwerp [BE] --sea/inferred--> Terneuzen [NL] --port_link/inferred--> Terneuzen Petrochemical (Dow) |
+| Total Antwerp Refinery | Seaborne crude (outside slice) | 0.5 | 0.5 | 6 | Seaborne crude (outside slice) --sea/inferred--> Antwerp [BE] --port_link/inferred--> Total Antwerp Refinery [crude_distillation: crude->naphtha] --port_link/inferred--> Antwerp [BE] --sea/inferred--> Terneuzen [NL] --port_link/inferred--> Terneuzen Petrochemical (Dow) |
+| ExxonMobil Botlek Rotterdam Refinery | Beyond slice (RMR, crude) | 0.5 | 0.3 | 5 | Beyond slice (RMR, crude) --pipeline/gap_bridged--> ExxonMobil Botlek Rotterdam Refinery [crude_distillation: crude->naphtha] --port_link/inferred--> Rotterdam [NL] --sea/inferred--> Terneuzen [NL] --port_link/inferred--> Terneuzen Petrochemical (Dow) |
+| Total Lukoil Zeeland Refinery | Seaborne crude (outside slice) | 0.2 | 0.2 | 5 | Seaborne crude (outside slice) --sea/inferred--> Terneuzen [NL] --unmapped/assumed--> Total Lukoil Zeeland Refinery [crude_distillation: crude->naphtha] --unmapped/assumed--> Terneuzen [NL] --port_link/inferred--> Terneuzen Petrochemical (Dow) |
+
+## Chemelot-Geleen Chemical Complex
+
+| tier1_supplier | origin | last_leg | min | hops | path |
+|---|---|---|---|---|---|
+| Seaborne naphtha (outside slice) | Seaborne naphtha (outside slice) | 0.3 | 0.3 | 2 | Seaborne naphtha (outside slice) --sea/inferred--> Rotterdam [NL] --barge/assumed--> Chemelot-Geleen Chemical Complex |
+| ExxonMobil Botlek Rotterdam Refinery | Beyond slice (RMR, crude) | 0.3 | 0.3 | 4 | Beyond slice (RMR, crude) --pipeline/gap_bridged--> ExxonMobil Botlek Rotterdam Refinery [crude_distillation: crude->naphtha] --port_link/inferred--> Rotterdam [NL] --barge/assumed--> Chemelot-Geleen Chemical Complex |
+| Shell Pernis Refinery | Seaborne crude (outside slice) | 0.3 | 0.3 | 5 | Seaborne crude (outside slice) --sea/inferred--> Rotterdam [NL] --pipeline/snapped--> Shell Pernis Refinery [crude_distillation: crude->naphtha] --port_link/inferred--> Rotterdam [NL] --barge/assumed--> Chemelot-Geleen Chemical Complex |
+| BP Rotterdam Refinery | Seaborne crude (outside slice) | 0.3 | 0.3 | 5 | Seaborne crude (outside slice) --sea/inferred--> Rotterdam [NL] --port_link/inferred--> BP Rotterdam Refinery [crude_distillation: crude->naphtha] --port_link/inferred--> Rotterdam [NL] --barge/assumed--> Chemelot-Geleen Chemical Complex |
+| ExxonMobil Botlek Rotterdam Refinery | Seaborne crude (outside slice) | 0.3 | 0.3 | 5 | Seaborne crude (outside slice) --sea/inferred--> Rotterdam [NL] --port_link/inferred--> ExxonMobil Botlek Rotterdam Refinery [crude_distillation: crude->naphtha] --port_link/inferred--> Rotterdam [NL] --barge/assumed--> Chemelot-Geleen Chemical Complex |
+| ExxonMobil Antwerp Refinery | Seaborne crude (outside slice) | 0.3 | 0.3 | 5 | Seaborne crude (outside slice) --sea/inferred--> Antwerp [BE] --port_link/inferred--> ExxonMobil Antwerp Refinery [crude_distillation: crude->naphtha] --port_link/inferred--> Antwerp [BE] --barge/assumed--> Chemelot-Geleen Chemical Complex |
+| Total Antwerp Refinery | Seaborne crude (outside slice) | 0.3 | 0.3 | 5 | Seaborne crude (outside slice) --sea/inferred--> Antwerp [BE] --port_link/inferred--> Total Antwerp Refinery [crude_distillation: crude->naphtha] --port_link/inferred--> Antwerp [BE] --barge/assumed--> Chemelot-Geleen Chemical Complex |
+| Total Lukoil Zeeland Refinery | Seaborne crude (outside slice) | 0.2 | 0.2 | 6 | Seaborne crude (outside slice) --sea/inferred--> Terneuzen [NL] --unmapped/assumed--> Total Lukoil Zeeland Refinery [crude_distillation: crude->naphtha] --unmapped/assumed--> Ghent [BE] --sea/inferred--> Rotterdam [NL] --barge/assumed--> Chemelot-Geleen Chemical Complex |

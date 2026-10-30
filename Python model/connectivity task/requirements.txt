@@ -1,0 +1,10 @@
+# Runtime
+pydantic>=2.5
+shapely>=2.0
+pyproj>=3.5
+networkx>=3.0
+folium>=0.15
+matplotlib>=3.7
+
+# Tests
+pytest>=7

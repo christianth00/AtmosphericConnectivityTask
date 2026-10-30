@@ -1,0 +1,20 @@
+{
+  "_note": "What-if requests, written as data and validated by the Scenario model before they touch the graph.",
+  "standard": [
+    {"name": "pernis_offline", "description": "Shell Pernis refinery offline",
+     "interventions": [{"kind": "facility_outage", "facility_id": "9f444ed5"}]},
+    {"name": "pernis_at_40pct", "description": "Shell Pernis refinery running at 40% (partial outage)",
+     "interventions": [{"kind": "facility_outage", "facility_id": "9f444ed5", "residual": 0.4}]},
+    {"name": "naphtha_pipeline_offline", "description": "The mapped naphtha pipeline (RRP / Pernis-Moerdijk) out of service",
+     "interventions": [{"kind": "asset_outage", "asset_id": "ff619ee1-3a26-5140-918a-5f8da543321a"}]},
+    {"name": "westerschelde_blocked", "description": "Sea and barge access via the Westerschelde blocked (a local 'Hormuz')",
+     "interventions": [{"kind": "chokepoint_block", "chokepoint": "westerschelde"}]},
+    {"name": "antwerp_area_closed", "description": "Everything inside a polygon around Antwerp port closed",
+     "interventions": [{"kind": "region_block",
+                        "polygon_wkt": "POLYGON((4.20 51.20, 4.45 51.20, 4.45 51.40, 4.20 51.40, 4.20 51.20))"}]}
+  ],
+  "illustrative": [
+    {"name": "hormuz_blocked_ILLUSTRATIVE", "description": "Strait of Hormuz closed, on the graph with INVENTED upstream exporters",
+     "interventions": [{"kind": "chokepoint_block", "chokepoint": "hormuz"}]}
+  ]
+}

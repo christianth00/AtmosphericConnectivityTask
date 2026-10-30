@@ -1,0 +1,8 @@
+from_id,to_id,from_name,to_name,waterway,bidirectional,chokepoint,source
+7ad6df35,a138d843,Rotterdam [NL],Antwerp [BE],Scheldt-Rhine connection,true,,assumption: general geography; no barge data in package
+7ad6df35,82cc39d7,Rotterdam [NL],Moerdijk [NL],Oude Maas / Dordtsche Kil,true,,assumption: general geography; no barge data in package
+a138d843,82cc39d7,Antwerp [BE],Moerdijk [NL],Scheldt-Rhine connection,true,,assumption: general geography; no barge data in package
+a138d843,38c59ab4,Antwerp [BE],Terneuzen [NL],Westerschelde,true,westerschelde,assumption: general geography; no barge data in package
+38c59ab4,66e32a72,Terneuzen [NL],Ghent [BE],Ghent-Terneuzen canal,true,,assumption: general geography; no barge data in package
+7ad6df35,6a46fddb,Rotterdam [NL],Chemelot-Geleen Chemical Complex,Maas / Julianakanaal,false,,assumption: inland site; barge access inferred from location
+a138d843,6a46fddb,Antwerp [BE],Chemelot-Geleen Chemical Complex,Albert Canal / Julianakanaal,false,,assumption: inland site; barge access inferred from location

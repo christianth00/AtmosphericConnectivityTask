@@ -1,0 +1,6 @@
+facility_id,port_name,sea_access,source
+7ad6df35,Rotterdam [NL],maasmond,assumption (general geography; not in data package)
+82cc39d7,Moerdijk [NL],maasmond,assumption: seagoing access via Rotterdam waterways
+a138d843,Antwerp [BE],westerschelde,assumption (general geography; not in data package)
+38c59ab4,Terneuzen [NL],westerschelde,assumption (general geography; not in data package)
+66e32a72,Ghent [BE],westerschelde,assumption: via Ghent-Terneuzen canal
